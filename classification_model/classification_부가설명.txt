@@ -59,7 +59,7 @@ input: ./input/input.png
 output: predicted 결과가 dictionary 형태로 output/result.json에 저장됨. 이 파일을 불러와서 LLM 결과 수정해주면 됩니다!
 
 classification.py 실행시 input 이미지에 대해 class 예측 수행함. 
-현재 결과가 항상 scindapsus___healthy로 나오도록 하드코딩 해놨는데, 
+현재 결과가 항상 스킨답서스, 노균병로 나오도록 하드코딩 해놨는데, 
 실제 예측 성능을 보고싶으면 predict_disease_and_recommend 함수에서 hard_coding옵션을 False로 변경해주면 됨.
 
 

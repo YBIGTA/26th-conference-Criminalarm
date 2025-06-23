@@ -81,14 +81,14 @@ def predict_disease_and_recommend(input_path, save_output=True, hard_coding=True
 
     if save_output:
         if hard_coding:
-            result = {'diseases':'Scindapsus___healthy',
-              'cause':'llm으로 채워야함1',
-              'solution':'llm으로 채워야함2'}
+            result = {'plant':'스킨답서스',
+              'disease':'노균병'}
 
         else:
-            result = {'diseases':predicted_class,
-              'cause':'llm으로 채워야함1',
-              'solution':'llm으로 채워야함2'}
+            plant = predicted_class.split('___')[0]
+            disease = predicted_class.split('___')[1]
+            result = {'plant':plant,
+              'disease':disease}
              
         with open(output_dir+'result.json','w') as f:
             json.dump(result)
