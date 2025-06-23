@@ -1,0 +1,66 @@
+## 모델은 크기가 커서 깃헙 업로드를 못했어요
+아래 링크에서 다운받으신 뒤에 ./classification_model 폴더 안에 집어넣으시면 됩니당.
+https://drive.google.com/file/d/1oYSld_SyXC0PTlG_cU5AChGE44iNicKN/view?usp=drive_link
+
+1. 모델 학습
+>> 특정 식물군에만 해당되는 일부 레이블 제거하고 학습 진행
+
+# 포함한 레이블
+1: Apple___Black_rot
+3: Apple___healthy
+4: Blueberry___healthy
+5: Cherry_(including_sour)___Powdery_mildew
+6: Cherry_(including_sour)___healthy
+7: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+8: Corn_(maize)___Common_rust_
+9: Corn_(maize)___Northern_Leaf_Blight
+10: Corn_(maize)___healthy
+11: Grape___Black_rot
+12: Grape___Esca_(Black_Measles)
+13: Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+14: Grape___healthy
+15: Orange___Haunglongbing_(Citrus_greening)
+16: Peach___Bacterial_spot
+17: Peach___healthy
+18: Pepper,_bell___Bacterial_spot
+19: Pepper,_bell___healthy
+20: Potato___Early_blight
+21: Potato___Late_blight
+22: Potato___healthy
+23: Raspberry___healthy
+24: Soybean___healthy
+25: Squash___Powdery_mildew
+26: Strawberry___Leaf_scorch
+27: Strawberry___healthy
+28: Tomato___Bacterial_spot
+29: Tomato___Early_blight
+30: Tomato___Late_blight
+31: Tomato___Leaf_Mold
+32: Tomato___Septoria_leaf_spot
+33: Tomato___Spider_mites Two-spotted_spider_mite
+34: Tomato___Target_Spot
+37: Tomato___healthy
+
+# 제외한 레이블 _ 특정 식물 이름이 들어가는 병충해
+0: Apple___Apple_scab
+2: Apple___Cedar_apple_rust
+35: Tomato___Tomato_Yellow_Leaf_Curl_Virus
+36: Tomato___Tomato_mosaic_virus
+
+2. 학습 결과
+Train Accuracy  : 99.39 %
+Test Accuracy   : 97.31 %
+Precision Score : 97.31 %
+Recall Score    : 97.31 %
+
+
+3. 경로 관련
+input: ./input/input.png
+output: predicted 결과가 dictionary 형태로 output/result.json에 저장됨. 이 파일을 불러와서 LLM 결과 수정해주면 됩니다!
+
+classification.py 실행시 input 이미지에 대해 class 예측 수행함. 
+현재 결과가 항상 scindapsus___healthy로 나오도록 하드코딩 해놨는데, 
+실제 예측 성능을 보고싶으면 predict_disease_and_recommend 함수에서 hard_coding옵션을 False로 변경해주면 됨.
+
+
+그외 이슈 있으면 >>김예린<<한테 카톡 주심 됩니당.
