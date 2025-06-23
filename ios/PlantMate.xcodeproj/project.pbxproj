@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17BAC5C4ABBF49FF588A4DC0 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA300CA3B51AFF60E5F7AF0E /* ReportView.swift */; };
+		1BEEBC6283380DC8FDFEE38B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBFD76513A2B837FBBEA23 /* MenuView.swift */; };
+		4BC8D45A5C8EC22AEDB5982A /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665063F23DC1C72D86107B0 /* IntroView.swift */; };
+		5E8FE5CB33CEA47D4D2784A3 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6192A79C767370AD969CF358 /* ChatView.swift */; };
+		7C89BBDD0B0F4633238680E9 /* PlantMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5CA0BE082F8FAF66767C9 /* PlantMateApp.swift */; };
+		899DA551177EB7AEFC65158F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D0F940744F42873F93A2FA /* Assets.xcassets */; };
+		AFDD1A3DDCBD728B25DCB73D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD5F5C7C2B979BE8F9B8AF /* ContentView.swift */; };
+		DA6890F136D103128395010D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0BA05C7B8412041E7BDCF32 /* Preview Assets.xcassets */; };
+		E38EAFE06EED72640D0781ED /* CheckupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B349CE6897D93BC6EA47BBF1 /* CheckupView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CC5CA0BE082F8FAF66767C9 /* PlantMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantMateApp.swift; sourceTree = "<group>"; };
+		6192A79C767370AD969CF358 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		9072637AA098072E503CE44D /* PlantMate.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PlantMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B349CE6897D93BC6EA47BBF1 /* CheckupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckupView.swift; sourceTree = "<group>"; };
+		D0D0F940744F42873F93A2FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8BBFD76513A2B837FBBEA23 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		E0BA05C7B8412041E7BDCF32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA300CA3B51AFF60E5F7AF0E /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		EEBD5F5C7C2B979BE8F9B8AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F665063F23DC1C72D86107B0 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		25BB22535AB8286443B52924 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E0BA05C7B8412041E7BDCF32 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5471D91EF2DF51C62590D240 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9072637AA098072E503CE44D /* PlantMate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FA2C61D6B779490865C2DC8 = {
+			isa = PBXGroup;
+			children = (
+				C90206ADAECF78420F6DC3AF /* PlantMate */,
+				5471D91EF2DF51C62590D240 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C90206ADAECF78420F6DC3AF /* PlantMate */ = {
+			isa = PBXGroup;
+			children = (
+				D0D0F940744F42873F93A2FA /* Assets.xcassets */,
+				6192A79C767370AD969CF358 /* ChatView.swift */,
+				B349CE6897D93BC6EA47BBF1 /* CheckupView.swift */,
+				EEBD5F5C7C2B979BE8F9B8AF /* ContentView.swift */,
+				F665063F23DC1C72D86107B0 /* IntroView.swift */,
+				D8BBFD76513A2B837FBBEA23 /* MenuView.swift */,
+				0CC5CA0BE082F8FAF66767C9 /* PlantMateApp.swift */,
+				EA300CA3B51AFF60E5F7AF0E /* ReportView.swift */,
+				25BB22535AB8286443B52924 /* Preview Content */,
+			);
+			path = PlantMate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36D97AC366E84E859472C164 /* PlantMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5AB8B05ABC7ACD5655C054B /* Build configuration list for PBXNativeTarget "PlantMate" */;
+			buildPhases = (
+				816042315417C81047800313 /* Sources */,
+				F52A60FAAEE9197226272742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlantMate;
+			packageProductDependencies = (
+			);
+			productName = PlantMate;
+			productReference = 9072637AA098072E503CE44D /* PlantMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D475F12777BD1FE936AC2C15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 8A3C877AD101935D204DC914 /* Build configuration list for PBXProject "PlantMate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ko,
+			);
+			mainGroup = 7FA2C61D6B779490865C2DC8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 54;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36D97AC366E84E859472C164 /* PlantMate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F52A60FAAEE9197226272742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899DA551177EB7AEFC65158F /* Assets.xcassets in Resources */,
+				DA6890F136D103128395010D /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		816042315417C81047800313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8FE5CB33CEA47D4D2784A3 /* ChatView.swift in Sources */,
+				E38EAFE06EED72640D0781ED /* CheckupView.swift in Sources */,
+				AFDD1A3DDCBD728B25DCB73D /* ContentView.swift in Sources */,
+				4BC8D45A5C8EC22AEDB5982A /* IntroView.swift in Sources */,
+				1BEEBC6283380DC8FDFEE38B /* MenuView.swift in Sources */,
+				7C89BBDD0B0F4633238680E9 /* PlantMateApp.swift in Sources */,
+				17BAC5C4ABBF49FF588A4DC0 /* ReportView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0EC6C496BA7B21E15A0B0D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "PlantMate/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plantmate.PlantMate;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2ED098CC8174EAF2B4281732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = PlantMate;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89A4C02453719A8CB79C916A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = PlantMate;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9588706C4A5176659499F7DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "PlantMate/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plantmate.PlantMate;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A3C877AD101935D204DC914 /* Build configuration list for PBXProject "PlantMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ED098CC8174EAF2B4281732 /* Debug */,
+				89A4C02453719A8CB79C916A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F5AB8B05ABC7ACD5655C054B /* Build configuration list for PBXNativeTarget "PlantMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EC6C496BA7B21E15A0B0D05 /* Debug */,
+				9588706C4A5176659499F7DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D475F12777BD1FE936AC2C15 /* Project object */;
+}
