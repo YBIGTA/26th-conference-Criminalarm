@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  plant-ai:
+    build: .
+    container_name: plant-friend-ai
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - NAVER_CLIENT_ID=cIchWx3damfG74qMyJgv
+      - NAVER_CLIENT_SECRET=jE1ZgoxNLg
+    volumes:
+      - ./data:/app/data:ro  # 환경 데이터 읽기 전용 마운트
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s 
