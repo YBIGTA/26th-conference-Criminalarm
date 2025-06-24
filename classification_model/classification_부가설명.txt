@@ -1,5 +1,5 @@
 ## 모델은 크기가 커서 깃헙 업로드를 못했어요
-아래 링크에서 다운받으신 뒤에 ./classification_model 폴더 안에 집어넣으시면 됩니당.
+아래 링크에서 다운받으신 뒤에 ./classification_model 폴더 안에 집어넣으신다음 확장자명 .keras -> .h5로 변경
 https://drive.google.com/file/d/1oYSld_SyXC0PTlG_cU5AChGE44iNicKN/view?usp=drive_link
 
 1. 모델 학습
