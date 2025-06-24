@@ -1,5 +1,5 @@
 ## 모델은 크기가 커서 깃헙 업로드를 못했어요
-아래 링크에서 다운받으신 뒤에 ./classification_model 폴더 안에 집어넣으시면 됩니당.
+아래 링크에서 다운받으신 뒤에 ./classification_model 폴더 안에 집어넣으신다음 확장자명 .keras -> .h5로 변경
 https://drive.google.com/file/d/1oYSld_SyXC0PTlG_cU5AChGE44iNicKN/view?usp=drive_link
 
 1. 모델 학습
@@ -59,7 +59,7 @@ input: ./input/input.png
 output: predicted 결과가 dictionary 형태로 output/result.json에 저장됨. 이 파일을 불러와서 LLM 결과 수정해주면 됩니다!
 
 classification.py 실행시 input 이미지에 대해 class 예측 수행함. 
-현재 결과가 항상 scindapsus___healthy로 나오도록 하드코딩 해놨는데, 
+현재 결과가 항상 스킨답서스, 노균병로 나오도록 하드코딩 해놨는데, 
 실제 예측 성능을 보고싶으면 predict_disease_and_recommend 함수에서 hard_coding옵션을 False로 변경해주면 됨.
 
 

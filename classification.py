@@ -8,6 +8,7 @@ from tensorflow import keras
 import numpy as np
 np.random.seed(0)
 import itertools
+<<<<<<< Updated upstream
 from keras.preprocessing.image import image_dataset_from_directory
 import os
 from tensorflow.keras.layers.experimental.preprocessing import Rescaling
@@ -16,6 +17,16 @@ from PIL import Image
 import json
 
 model_path = './classification_model/classification_model.keras'
+=======
+from tensorflow.keras.utils import image_dataset_from_directory
+import os
+import matplotlib.pyplot as plt
+from PIL import Image
+import json
+from keras.layers import TFSMLayer
+
+model_path = 'classification_model/classification_model.h5'
+>>>>>>> Stashed changes
 input_path = './input/input.png'
 output_dir = './output/'
 
@@ -56,7 +67,12 @@ class_names = ['Apple___Black_rot',
 
 
 # model load
+<<<<<<< Updated upstream
 def load_model(model_path = model_path):
+=======
+def load_model():
+   # model = TFSMLayer("classification_model/", call_endpoint="serving_default")
+>>>>>>> Stashed changes
     model = keras.models.load_model(model_path)
     return model
 
@@ -81,21 +97,29 @@ def predict_disease_and_recommend(input_path, save_output=True, hard_coding=True
 
     if save_output:
         if hard_coding:
-            result = {'diseases':'Scindapsus___healthy',
-              'cause':'llm으로 채워야함1',
-              'solution':'llm으로 채워야함2'}
+            result = {'plant':'스킨답서스',
+              'disease':'노균병'}
 
         else:
-            result = {'diseases':predicted_class,
-              'cause':'llm으로 채워야함1',
-              'solution':'llm으로 채워야함2'}
+            plant = predicted_class.split('___')[0]
+            disease = predicted_class.split('___')[1]
+            result = {'plant':plant,
+              'disease':disease}
              
         with open(output_dir+'result.json','w') as f:
+<<<<<<< Updated upstream
             json.dump(result)
+=======
+            json.dump(result,f)
+>>>>>>> Stashed changes
 
     plt.show()
 
 
 
 # run model
+<<<<<<< Updated upstream
 predict_disease_and_recommend(input_path, save_output=True, hard_coding=True)
+=======
+# predict_disease_and_recommend(input_path, save_output=True, hard_coding=True)
+>>>>>>> Stashed changes
