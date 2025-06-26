@@ -1,10 +1,12 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from pydantic import BaseModel
 from langchain_response.utils import run_langchain_from_result_file
 from langchain_response.chain import diagnosis_chain
 from classification import predict_disease_and_recommend
 import os
+import uuid
 import json
+import shutil
 
 # bash에 다음을 입력해서 서버 실행
 # uvicorn main:app --reload 
@@ -13,35 +15,55 @@ import json
 app = FastAPI()
 
 class DiagnosisRequest(BaseModel):
-    result_path : str #"output/result.json"
+    input_path : str
 
-@app.on_event("startup")
-def startup_event():
-    try:
-        # classification.py 실행
-        predict_disease_and_recommend(input_path='./input/input.png', save_output=True, hard_coding=True) 
+# @app.on_event("startup")
+# def startup_event():
+#     try:
+#         # input 불러오기
+#         print("✅ classification.py 실행 완료 및 결과 파일 생성됨.")
 
-        # 결과 JSON 확인
-        if not os.path.exists("output/result.json"):
-            raise FileNotFoundError("output/result.json not found")
+#         # classification.py 실행
+#         predict_disease_and_recommend(input_path=input_path, save_output=True, hard_coding=True) 
 
-        print("✅ classification.py 실행 완료 및 결과 파일 생성됨.")
+#         # 결과 JSON 확인
+#         if not os.path.exists("output/result.json"):
+#             raise FileNotFoundError("output/result.json not found")
 
-    except Exception as e:
-        print(f"❌ Startup Error: {e}")
+#         print("✅ classification.py 실행 완료 및 결과 파일 생성됨.")
+
+#     except Exception as e:
+#         print(f"❌ Startup Error: {e}")
 
 
 @app.post("/diagnosis")
-def diagnose(req: DiagnosisRequest):
-    with open(req.result_path, "r", encoding="utf-8") as f:
+async def diagnose(image: UploadFile = File(...)):
+    try:
+        # 1. 이미지 파일을 저장할 임시 경로 생성
+        input_dir = "input"
+        os.makedirs(input_dir, exist_ok=True)
+        file_ext = os.path.splitext(image.filename)[-1]
+        saved_path = os.path.join(input_dir, f"{uuid.uuid4().hex}{file_ext}")
+
+        with open(saved_path, "wb") as buffer:
+            shutil.copyfileobj(image.file, buffer)
+
+        # 2. 분류 모델 실행
+        predict_disease_and_recommend(input_path=saved_path, save_output=True, hard_coding=False)
+
+        # 3. 결과 확인
+        if not os.path.exists("output/result.json"):
+            raise FileNotFoundError("output/result.json not found")
+
+        with open("output/result.json", "r", encoding="utf-8") as f:
             result = json.load(f)
 
-    plant = result["plant"]
-    disease = result["disease"]
-    
-    try:
-        result = run_langchain_from_result_file(plant=plant, disease=disease)
-        return result
+        plant = result["plant"]
+        disease = result["disease"]
+
+        # 4. LLM 처리
+        return run_langchain_from_result_file(plant=plant, disease=disease)
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     

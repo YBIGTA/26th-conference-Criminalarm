@@ -1,0 +1,10 @@
+langchain_community
+langchain
+tensorflow
+matplotlib
+numpy
+pandas
+fastapi
+pydantic
+openai
+uvicorn
